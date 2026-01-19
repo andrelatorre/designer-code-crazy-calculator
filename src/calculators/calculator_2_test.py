@@ -1,4 +1,4 @@
-from .calculatore_2 import Calculator2
+from .calculator_2 import Calculator2
 from typing import Dict, List
 from src.drivers.numpy_handler import NumpyHandler
 from src.drivers.interfaces.driver_handler_interface import DriverHandlerInterface
@@ -9,6 +9,8 @@ class MockRequest:
 
 class MockDriverHandler(DriverHandlerInterface):
     def standard_derivation(self, numbers):
+        return 3
+    def variance(self, numbers):
         return 3
 
 #Integração entre NumpyHandler e Calculator2
